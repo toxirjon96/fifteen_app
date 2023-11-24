@@ -12,7 +12,7 @@ class GameHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: "House Trade",
+      title: "Fifteen",
       debugShowCheckedModeBanner: false,
       theme: ThemeConfig.theme,
       home: const ConfigurationPage(),
