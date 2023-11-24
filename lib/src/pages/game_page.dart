@@ -12,7 +12,7 @@ class GamePage extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Tic Tac Toe"),
+        title: const Text("Fifteen"),
         actions: [
           IconButton(
             onPressed: () {
@@ -37,6 +37,13 @@ class GamePage extends ConsumerWidget {
                         fontSize: 28,
                         color:
                             Theme.of(context).colorScheme.onPrimaryContainer),
+                  ),
+                  Text(
+                    "Urinishlar soni: $tryCount",
+                    style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                        fontSize: 28,
+                        color:
+                        Theme.of(context).colorScheme.onPrimaryContainer),
                   ),
                   IconButton(
                     onPressed: () {

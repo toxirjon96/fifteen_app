@@ -7,21 +7,6 @@ class ConfigurationPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final List<XFile> fileList = [];
-    final ImagePicker picker = ImagePicker();
-    void pickImageFromGallery() async{
-      // XFile? file = await picker.pickImage(source: ImageSource.gallery);
-      // if (file != null){
-      //   print(file.name);
-      //   print(file.path);
-      //   print(file.mimeType);
-      //   print(file.runtimeType);
-      //   print(await file.length());
-      //   print(await file.lastModified());
-      //
-      //   fileList.add(file);
-      // }
-    }
     int value = ref.watch(configurationProvider);
     return Scaffold(
       body: Column(
@@ -58,7 +43,6 @@ class ConfigurationPage extends ConsumerWidget {
             children: [
               TextButton(
                 onPressed: () {
-                  pickImageFromGallery();
                 },
                 style: TextButton.styleFrom(
                   padding:
